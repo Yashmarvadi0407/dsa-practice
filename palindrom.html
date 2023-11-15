@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function palindrom(string) {
+      //   console.log("first");
+      const S2 = string.split("").reverse().join("");
+      if (string === S2) {
+        console.log("palindrom");
+      } else {
+        console.log("not palindrom");
+      }
+    }
+    const string = "20iiiii02";
+    palindrom(string);
+  </script>
+  <body></body>
+</html>
