@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function vowel(string) {
+      //   console.log("first");
+      const j = string.split("");
+      let vowel = 0;
+      for (let i = 0; i < j.length; i++) {
+        if (
+          j[i] == "a" ||
+          j[i] == "e" ||
+          j[i] == "i" ||
+          j[i] == "o" ||
+          j[i] == "u" ||
+          j[i] == "A" ||
+          j[i] == "E" ||
+          j[i] == "I" ||
+          j[i] == "O" ||
+          j[i] == "U"
+        ) {
+          vowel = vowel + 1;
+        }
+      }
+      console.log("vowel", vowel);
+    }
+    const string = "atyatytueeoeiehb";
+    vowel(string);
+  </script>
+  <body></body>
+</html>
