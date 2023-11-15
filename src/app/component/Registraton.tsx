@@ -1,11 +1,13 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { registratonaction } from "../store/actions/registratonaction";
 import { useDispatch } from "react-redux";
 const Registraton = () => {
   const dispatch = useDispatch();
+  const router = useRouter();
   type Formdata = {
     firstName: string;
     lastName: string;
@@ -29,6 +31,7 @@ const Registraton = () => {
 
   return (
     <>
+    <center>
       <form onSubmit={handleSubmit(submitHan)}>
         <h1>Registration</h1>
         <input
@@ -51,6 +54,15 @@ const Registraton = () => {
         <br />
         <button type="submit">Submit</button>
       </form>
+      <br />
+      <button
+        onClick={() => {
+          router.push("/dashboard");
+        }}
+      >
+        Back to Dashboard
+      </button>
+      </center>
     </>
   );
 };

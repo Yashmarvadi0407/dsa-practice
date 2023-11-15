@@ -34,6 +34,7 @@ const Student = () => {
 
   return (
     <>
+    <center>
       <h1> This is user Form</h1>
       <form onSubmit={handleSubmit(onsubmit)}>
         <input
@@ -72,6 +73,7 @@ const Student = () => {
         <button type="submit"> Submit</button>
         <DevTool control={control} />
       </form>
+      </center>
     </>
   );
 };

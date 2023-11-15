@@ -19,7 +19,7 @@ export default function page() {
         <button
           type="button"
           onClick={() => {
-            router.push("/");
+            router.push("/dashboard");
           }}
         >
           Dashboard
