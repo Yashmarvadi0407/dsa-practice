@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function word(number) {
+      //   console.log("word", number);
+
+      switch (number) {
+        case "0":
+          console.log("zero");
+          break;
+        case "1":
+          console.log("one");
+          break;
+        case "2":
+          console.log("two");
+          break;
+        case "3":
+          console.log("three");
+          break;
+        case "4":
+          console.log("four");
+          break;
+        case "5":
+          console.log("five");
+          break;
+        case "6":
+          console.log("six");
+          break;
+        case "7":
+          console.log("seven");
+          break;
+        case "8":
+          console.log("eight");
+          break;
+        case "9":
+          console.log("nine");
+          break;
+      }
+    }
+    // word("5");
+    let value = "123";
+    convert(value);
+    function convert(n) {
+      // console.log(value.length, value.split(""));
+      const a = value.split("");
+      for (let i = 0; i < value.length; i++) {
+        word(a[i]);
+      }
+    }
+  </script>
+  <body></body>
+</html>

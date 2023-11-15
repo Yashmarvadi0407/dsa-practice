@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sort Array</title>
+  </head>
+  <script>
+    function sort() {
+      const arr = [3, 5, -2, -1];
+
+      console.log("befor sorting", arr);
+      for (let i = 0; i < arr.length; i++) {
+        // console.log("array Element",arr[i]);
+        for (let j = i; j < arr.length; j++) {
+          //   console.log("j", arr[j]);
+          console.log(arr[j], arr[i]);
+          if (arr[j] < arr[i]) {
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+          }
+        }
+      }
+      //   console.log("sort", arr);
+      console.log("after sorting", arr.join(""));
+    }
+    sort();
+  </script>
+
+  <body></body>
+</html>
