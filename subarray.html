@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SubArray</title>
+  </head>
+  <script>
+    function sub() {
+      const arr = [2, 4, 2, 5, 6, 7, 8];
+      const value = 4;
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+          if (arr[j] < arr[i]) {
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+          }
+        }
+      }
+      for (let i = 0; i < arr.length; i++) {
+        const y = i;
+        for (let j = i; j < arr.length; j++) {
+          let total = 0;
+          total = total + arr[i] + arr[j];
+          if (total === value) {
+            console.log("wow", total, y, j);
+          }
+          break;
+
+          console.log("total", total);
+          //   break;
+          // if (arr[i] + arr[i + 1] + arr[i + 2] === value) {
+          //   console.log("first", i, i + 2);
+          //     }
+        }
+      }
+      //   console.log("first", arr);
+    }
+    sub();
+  </script>
+  <body></body>
+</html>
